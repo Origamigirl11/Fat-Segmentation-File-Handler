@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AboutDialog</class>
+ <widget class="QDialog" name="AboutDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>737</width>
+    <height>372</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>About Fat Segmentation File Chooser</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Author:&lt;/span&gt; Addison Elliott&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Overview: &lt;/span&gt;The purpose of this program is to convert MRI scans into a standardized format. The program searches in destination folder for the four NIFTI images: fat upper, fat lower, water upper, and water lower. These are renamed and placed in the destination folder. In addition, an XML file is created for configuration options. Also, if a .mat file that ends with registered or results, then it will be copied over to the destination folder. &lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Instructions:&lt;/span&gt;&lt;/p&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:4px;&quot;&gt;Select the destination folder where you would like the new MRI scan information to be stored. A subfolder will be made within this destination folder to store the scan data which is named based on the &lt;span style=&quot; font-style:italic;&quot;&gt;New Directory Field&lt;/span&gt; in the source list view. So the actual folder where data is stored is destination folder plus the new directory name.&lt;/li&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Select the source folder for each MRI scan you would like to transfer over into the destination folder. Select the outermost folder that represents the scan data. As an example, there is a folder &lt;span style=&quot; font-style:italic;&quot;&gt;MF0203_1026153&lt;/span&gt; with the subfolder &lt;span style=&quot; font-style:italic;&quot;&gt;ABDOMEN_ABD_20151026_150801_304000&lt;/span&gt; which contains more subfolders with the data. The user would select &lt;span style=&quot; font-style:italic;&quot;&gt;MF0203_1026153&lt;/span&gt; as the source folder. The program will traverse into the directories and read the data from there.&lt;/li&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Select the new directory name for each of the source folders. This is the subfolder that will be created in the destination folder to store the data. A suggested format is present of &lt;span style=&quot; font-style:italic;&quot;&gt;SubjectXXX_Initial/Final&lt;/span&gt; where XXXX is the subject number and Initial/Final is pre/post intervention.&lt;/li&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Hit Convert to have the program convert the source folders to the destination folder.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
